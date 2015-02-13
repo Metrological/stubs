@@ -46,7 +46,7 @@ target: $(OUTPUT)/$(TYPE)/lib$(TARGET).a
 	cp $(OUTPUT)/$(TYPE)/lib$(TARGET).a $(TARGET_DIR)/usr/lib
 	ln -s $(TARGET_DIR)/usr/lib/lib$(TARGET).a libdcv_sub.a
 
-staging: $(OUTPUT)/$(TYPE)/lib$(TARGET).so
+staging: $(OUTPUT)/$(TYPE)/lib$(TARGET).a
 	cp *.h $(STAGING_DIR)/usr/include/
 	cp $(OUTPUT)/$(TYPE)/lib$(TARGET).a $(STAGING_DIR)/usr/lib
 
