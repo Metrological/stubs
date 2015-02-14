@@ -59,7 +59,7 @@ $(OUTPUT)/$(TYPE)/lib$(TARGET).a: $(OBJECTS)
 
 obj/$(TYPE)/%.o: %.cpp
 	@mkdir -p $(dir $@)
-	$(CXX) -c -o $@ $<
+	$(CC) -c -o $@ $<
 	
 clean: 
 	rm -f ./obj/$(TYPE)/*
